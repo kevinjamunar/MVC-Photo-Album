@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchViewController">
+   <children>
+      <Button fx:id="homeButton" layoutX="40.0" layoutY="330.0" mnemonicParsing="false" onAction="#onHomeButtonClicked" prefHeight="27.0" prefWidth="96.0" text="&lt;- Back" />
+       
+      <Button fx:id="slideshowButton" layoutX="149.0" layoutY="330.0" mnemonicParsing="false" onAction="#onSlideshowButtonClicked" prefHeight="27.0" prefWidth="96.0" text="Slideshow" />
+      
+      <Button fx:id="viewPhotoButton" layoutX="259.0" layoutY="330.0" mnemonicParsing="false" onAction="#onViewPhotoButtonClicked" prefHeight="27.0" prefWidth="96.0" text="View Photo" />
+      
+      <ScrollPane layoutX="40.0" layoutY="71.0" prefHeight="244.0" prefWidth="797.0">
+         <content>
+            <TilePane fx:id="searchResultsTilePane" hgap="30.0" prefHeight="242.0" prefWidth="799.0" vgap="30.0" />
+         </content>
+      </ScrollPane>
+      <Text layoutX="40.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Results For:">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="errorMessage" layoutX="212.0" layoutY="387.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="error" wrappingWidth="458.1197497844696">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <Text fx:id="successCreateText" layoutX="631.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album Successfully Created" />
+      <Text fx:id="searchRangeOrTagText" layoutX="304.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Button fx:id="createSearchResultAlbumButton" layoutX="372.0" layoutY="330.0" mnemonicParsing="false" onAction="#createAlbum" text="Create Album With These Results" />
+      <Button fx:id="logoutButton" layoutX="778.0" layoutY="20.0" mnemonicParsing="false" text="Logout" />
+   </children>
+</Pane>

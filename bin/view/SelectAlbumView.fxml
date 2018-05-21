@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SelectAlbumViewController">
+   <center>
+      <ListView fx:id="albumListView" prefHeight="319.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Pane prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="submitAlbumButton" layoutX="230.0" layoutY="7.0" mnemonicParsing="false" text="Submit" />
+            <Button fx:id="cancelButton" layoutX="310.0" layoutY="7.0" mnemonicParsing="false" text="Cancel" />
+         </children>
+      </Pane>
+   </bottom>
+   <left>
+      <Pane prefHeight="331.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="331.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <Pane prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="title" layoutX="82.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select an album to move this photo to:" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
